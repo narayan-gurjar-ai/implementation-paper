@@ -1,0 +1,6 @@
+saved fig1_tradeoff_ablation.pdf
+saved fig2_nfr_vs_sigma.pdf
+saved fig3_accuracy_vs_sigma.pdf
+saved fig4_failure_by_class.pdf
+
+All figures generated from results/csv/*.csv (no hand-entered values).

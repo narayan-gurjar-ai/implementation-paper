@@ -1,0 +1,31 @@
+======================================================================
+ENVIRONMENT CHECK
+======================================================================
+numpy version      : 2.5.3
+sklearn version     : 1.9.1
+python version      : 3.13.16
+timestamp (UTC-ish) : 2026-10-20 10:16:40
+
+--- Dataset load ---
+X shape = (1797, 64), y shape = (1797,), classes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+PASS: dataset shape and class count as expected.
+
+--- Fixed test-set determinism check ---
+TEST set size = 360 (20.0% of data)
+TRAIN pool size = 1437 (80.0% of data)
+PASS: identical seed reproduces an identical test set (no leakage drift across runs).
+PASS: TEST and TRAIN-POOL are disjoint (no leakage).
+
+--- Tiny end-to-end training step (real execution, not a mock) ---
+  epoch    0  mean CE loss = 1.2992
+  epoch   50  mean CE loss = 0.0267
+  epoch   59  mean CE loss = 0.0231
+
+Training wall time: 0.02s for 359 samples, 60 epochs
+Final training CE loss: 0.0231
+Test accuracy (sanity run, NOT the main experiment): 0.9333
+PASS: sanity-check model trains and clears a plausibility floor (>50% acc on a 10-class task).
+
+======================================================================
+ALL ENVIRONMENT CHECKS PASSED
+======================================================================

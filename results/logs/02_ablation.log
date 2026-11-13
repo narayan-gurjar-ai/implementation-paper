@@ -1,0 +1,146 @@
+======================================================================
+ABLATION SWEEP  (sigma fixed = 8.0, seeds = [0, 1, 2, 3, 4])
+======================================================================
+
+--- seed 0 ---
+NAIVE          acc=0.8993  NFR=0.0694  PFR=0.0243
+PCT lam=0.00   acc=0.8993  NFR=0.0694  PFR=0.0243
+PCT lam=0.25   acc=0.8958  NFR=0.0833  PFR=0.0347
+PCT lam=0.50   acc=0.8715  NFR=0.1042  PFR=0.0312
+PCT lam=1.00   acc=0.8194  NFR=0.1562  PFR=0.0312
+PCT lam=2.00   acc=0.7431  NFR=0.2326  PFR=0.0312
+PCT lam=4.00   acc=0.6771  NFR=0.2986  PFR=0.0312
+BCWI a=0.00    acc=0.8993  NFR=0.0694  PFR=0.0243
+BCWI a=0.20    acc=0.8993  NFR=0.0694  PFR=0.0243
+BCWI a=0.40    acc=0.8993  NFR=0.0694  PFR=0.0243
+BCWI a=0.50    acc=0.8993  NFR=0.0694  PFR=0.0243
+BCWI a=0.60    acc=0.8993  NFR=0.0694  PFR=0.0243
+BCWI a=0.70    acc=0.9028  NFR=0.0660  PFR=0.0243
+BCWI a=0.80    acc=0.9028  NFR=0.0660  PFR=0.0243
+BCWI a=0.85    acc=0.9062  NFR=0.0625  PFR=0.0243
+BCWI a=0.90    acc=0.9097  NFR=0.0590  PFR=0.0243
+BCWI a=0.92    acc=0.9097  NFR=0.0590  PFR=0.0243
+BCWI a=0.95    acc=0.9167  NFR=0.0521  PFR=0.0243
+BCWI a=0.98    acc=0.9271  NFR=0.0417  PFR=0.0243
+BCWI a=1.00    acc=0.9444  NFR=0.0000  PFR=0.0000
+
+--- seed 1 ---
+NAIVE          acc=0.8854  NFR=0.0590  PFR=0.0278
+PCT lam=0.00   acc=0.8854  NFR=0.0590  PFR=0.0278
+PCT lam=0.25   acc=0.8611  NFR=0.0764  PFR=0.0208
+PCT lam=0.50   acc=0.8368  NFR=0.0972  PFR=0.0174
+PCT lam=1.00   acc=0.8160  NFR=0.1215  PFR=0.0208
+PCT lam=2.00   acc=0.7847  NFR=0.1528  PFR=0.0208
+PCT lam=4.00   acc=0.7569  NFR=0.1806  PFR=0.0208
+BCWI a=0.00    acc=0.8854  NFR=0.0590  PFR=0.0278
+BCWI a=0.20    acc=0.8889  NFR=0.0556  PFR=0.0278
+BCWI a=0.40    acc=0.8889  NFR=0.0556  PFR=0.0278
+BCWI a=0.50    acc=0.8889  NFR=0.0556  PFR=0.0278
+BCWI a=0.60    acc=0.8889  NFR=0.0556  PFR=0.0278
+BCWI a=0.70    acc=0.8889  NFR=0.0556  PFR=0.0278
+BCWI a=0.80    acc=0.8854  NFR=0.0556  PFR=0.0243
+BCWI a=0.85    acc=0.8854  NFR=0.0556  PFR=0.0243
+BCWI a=0.90    acc=0.8854  NFR=0.0556  PFR=0.0243
+BCWI a=0.92    acc=0.8854  NFR=0.0556  PFR=0.0243
+BCWI a=0.95    acc=0.8854  NFR=0.0556  PFR=0.0243
+BCWI a=0.98    acc=0.9062  NFR=0.0312  PFR=0.0208
+BCWI a=1.00    acc=0.9167  NFR=0.0000  PFR=0.0000
+
+--- seed 2 ---
+NAIVE          acc=0.8785  NFR=0.0868  PFR=0.0208
+PCT lam=0.00   acc=0.8785  NFR=0.0868  PFR=0.0208
+PCT lam=0.25   acc=0.8785  NFR=0.0833  PFR=0.0174
+PCT lam=0.50   acc=0.8438  NFR=0.1181  PFR=0.0174
+PCT lam=1.00   acc=0.8090  NFR=0.1562  PFR=0.0208
+PCT lam=2.00   acc=0.7639  NFR=0.2014  PFR=0.0208
+PCT lam=4.00   acc=0.7431  NFR=0.2222  PFR=0.0208
+BCWI a=0.00    acc=0.8785  NFR=0.0868  PFR=0.0208
+BCWI a=0.20    acc=0.8785  NFR=0.0868  PFR=0.0208
+BCWI a=0.40    acc=0.8785  NFR=0.0868  PFR=0.0208
+BCWI a=0.50    acc=0.8785  NFR=0.0868  PFR=0.0208
+BCWI a=0.60    acc=0.8785  NFR=0.0868  PFR=0.0208
+BCWI a=0.70    acc=0.8785  NFR=0.0868  PFR=0.0208
+BCWI a=0.80    acc=0.8854  NFR=0.0799  PFR=0.0208
+BCWI a=0.85    acc=0.8924  NFR=0.0729  PFR=0.0208
+BCWI a=0.90    acc=0.8993  NFR=0.0660  PFR=0.0208
+BCWI a=0.92    acc=0.9028  NFR=0.0625  PFR=0.0208
+BCWI a=0.95    acc=0.9062  NFR=0.0590  PFR=0.0208
+BCWI a=0.98    acc=0.9306  NFR=0.0382  PFR=0.0243
+BCWI a=1.00    acc=0.9444  NFR=0.0000  PFR=0.0000
+
+--- seed 3 ---
+NAIVE          acc=0.8507  NFR=0.1111  PFR=0.0312
+PCT lam=0.00   acc=0.8507  NFR=0.1111  PFR=0.0312
+PCT lam=0.25   acc=0.8299  NFR=0.1354  PFR=0.0347
+PCT lam=0.50   acc=0.8125  NFR=0.1528  PFR=0.0347
+PCT lam=1.00   acc=0.7674  NFR=0.1910  PFR=0.0278
+PCT lam=2.00   acc=0.7083  NFR=0.2535  PFR=0.0312
+PCT lam=4.00   acc=0.6389  NFR=0.3229  PFR=0.0312
+BCWI a=0.00    acc=0.8507  NFR=0.1111  PFR=0.0312
+BCWI a=0.20    acc=0.8507  NFR=0.1111  PFR=0.0312
+BCWI a=0.40    acc=0.8507  NFR=0.1111  PFR=0.0312
+BCWI a=0.50    acc=0.8507  NFR=0.1111  PFR=0.0312
+BCWI a=0.60    acc=0.8507  NFR=0.1111  PFR=0.0312
+BCWI a=0.70    acc=0.8507  NFR=0.1111  PFR=0.0312
+BCWI a=0.80    acc=0.8542  NFR=0.1076  PFR=0.0312
+BCWI a=0.85    acc=0.8611  NFR=0.1007  PFR=0.0312
+BCWI a=0.90    acc=0.8715  NFR=0.0903  PFR=0.0312
+BCWI a=0.92    acc=0.8785  NFR=0.0833  PFR=0.0312
+BCWI a=0.95    acc=0.8993  NFR=0.0660  PFR=0.0347
+BCWI a=0.98    acc=0.9097  NFR=0.0486  PFR=0.0278
+BCWI a=1.00    acc=0.9306  NFR=0.0000  PFR=0.0000
+
+--- seed 4 ---
+NAIVE          acc=0.8576  NFR=0.0833  PFR=0.0243
+PCT lam=0.00   acc=0.8576  NFR=0.0833  PFR=0.0243
+PCT lam=0.25   acc=0.8194  NFR=0.1250  PFR=0.0278
+PCT lam=0.50   acc=0.7951  NFR=0.1528  PFR=0.0312
+PCT lam=1.00   acc=0.7639  NFR=0.1875  PFR=0.0347
+PCT lam=2.00   acc=0.7257  NFR=0.2222  PFR=0.0312
+PCT lam=4.00   acc=0.6944  NFR=0.2500  PFR=0.0278
+BCWI a=0.00    acc=0.8576  NFR=0.0833  PFR=0.0243
+BCWI a=0.20    acc=0.8576  NFR=0.0833  PFR=0.0243
+BCWI a=0.40    acc=0.8576  NFR=0.0833  PFR=0.0243
+BCWI a=0.50    acc=0.8576  NFR=0.0833  PFR=0.0243
+BCWI a=0.60    acc=0.8576  NFR=0.0833  PFR=0.0243
+BCWI a=0.70    acc=0.8611  NFR=0.0799  PFR=0.0243
+BCWI a=0.80    acc=0.8576  NFR=0.0799  PFR=0.0208
+BCWI a=0.85    acc=0.8646  NFR=0.0729  PFR=0.0208
+BCWI a=0.90    acc=0.8681  NFR=0.0694  PFR=0.0208
+BCWI a=0.92    acc=0.8681  NFR=0.0694  PFR=0.0208
+BCWI a=0.95    acc=0.8681  NFR=0.0694  PFR=0.0208
+BCWI a=0.98    acc=0.8924  NFR=0.0417  PFR=0.0174
+BCWI a=1.00    acc=0.9167  NFR=0.0000  PFR=0.0000
+
+Saved 100 rows to results/csv/ablation_results.csv
+
+NAIVE mean over seeds: acc=0.8743  NFR=0.0819
+OLD   mean over seeds: acc=0.9306  (reference floor)
+
+--- PCT candidates (mean over seeds) ---
+lambda=0.00  acc=0.8743 NFR=0.0819 NFR_reduction=+0.0% acc_cost=+0.0000
+lambda=0.25  acc=0.8569 NFR=0.1007 NFR_reduction=-22.9% acc_cost=+0.0174
+lambda=0.50  acc=0.8319 NFR=0.1250 NFR_reduction=-52.5% acc_cost=+0.0424
+lambda=1.00  acc=0.7951 NFR=0.1625 NFR_reduction=-98.3% acc_cost=+0.0792
+lambda=2.00  acc=0.7451 NFR=0.2125 NFR_reduction=-159.3% acc_cost=+0.1292
+lambda=4.00  acc=0.7021 NFR=0.2549 NFR_reduction=-211.0% acc_cost=+0.1722
+
+--- BCWI candidates (mean over seeds) ---
+alpha=0.00   acc=0.8743 NFR=0.0819 NFR_reduction=+0.0% acc_cost=+0.0000
+alpha=0.20   acc=0.8750 NFR=0.0812 NFR_reduction=+0.8% acc_cost=-0.0007
+alpha=0.40   acc=0.8750 NFR=0.0812 NFR_reduction=+0.8% acc_cost=-0.0007
+alpha=0.50   acc=0.8750 NFR=0.0812 NFR_reduction=+0.8% acc_cost=-0.0007
+alpha=0.60   acc=0.8750 NFR=0.0812 NFR_reduction=+0.8% acc_cost=-0.0007
+alpha=0.70   acc=0.8764 NFR=0.0799 NFR_reduction=+2.5% acc_cost=-0.0021
+alpha=0.80   acc=0.8771 NFR=0.0778 NFR_reduction=+5.1% acc_cost=-0.0028
+alpha=0.85   acc=0.8819 NFR=0.0729 NFR_reduction=+11.0% acc_cost=-0.0076
+alpha=0.90   acc=0.8868 NFR=0.0681 NFR_reduction=+16.9% acc_cost=-0.0125
+alpha=0.92   acc=0.8889 NFR=0.0660 NFR_reduction=+19.5% acc_cost=-0.0146
+alpha=0.95   acc=0.8951 NFR=0.0604 NFR_reduction=+26.3% acc_cost=-0.0208  <= MEETS CRITERION
+alpha=0.98   acc=0.9132 NFR=0.0403 NFR_reduction=+50.8% acc_cost=-0.0389  <= MEETS CRITERION
+alpha=1.00   acc=0.9306 NFR=0.0000 NFR_reduction=+100.0% acc_cost=-0.0562  [excluded: structural identity, alpha=1.0]
+
+======================================================================
+SELECTED DEFAULTS: lambda* = None   alpha* = 0.98
+(carried unchanged into scripts/03_magnitude_sweep.py)
+======================================================================

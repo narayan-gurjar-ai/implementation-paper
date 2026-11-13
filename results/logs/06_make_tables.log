@@ -1,0 +1,2 @@
+seed check (sigma, BCWI<NAIVE, PCT<NAIVE) [ties count as not-less]: [(np.float64(0.0), 5, 1), (np.float64(2.0), 5, 2), (np.float64(4.0), 5, 3), (np.float64(6.0), 5, 0), (np.float64(8.0), 5, 1), (np.float64(10.0), 5, 0)]
+NAIVE val NFR 0.0819 OLD val acc 0.9306

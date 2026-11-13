@@ -1,0 +1,28 @@
+======================================================================
+BASELINE VALIDATION (reference seed = 42)
+======================================================================
+OLD training set size  : 359 (25% of pool)
+NEW training set size  : 1437 (100% of pool)
+Fixed TEST set size    : 360
+
+--- Convergence check ---
+OLD   training CE loss: epoch 0 = 1.3434 -> final = 0.0079
+NAIVE training CE loss: epoch 0 = 0.6266 -> final = 0.0095
+PASS: both models' training loss decreased monotonically overall.
+
+--- Shared-initialization check (required for BCWI later) ---
+PASS: OLD and NAIVE were initialized from identical weights.
+
+--- Baseline metrics (reference seed) ---
+OLD   accuracy           : 0.9278
+NAIVE accuracy           : 0.9611  (delta vs OLD: +0.0333)
+NAIVE Negative Flip Rate : 0.0083  (3 / 360 test instances)
+NAIVE Positive Flip Rate : 0.0417  (15 / 360 test instances)
+
+--- Plausibility checks ---
+PASS: NAIVE (more data) beats OLD on accuracy, as expected for this dataset size regime.
+PASS: NFR is nonzero (0.0083) — confirms the metric is actually detecting instance-level regressions rather than trivially returning 0.
+
+======================================================================
+BASELINE VALIDATED — proceeding to the frozen sweep (script 02) is justified.
+======================================================================

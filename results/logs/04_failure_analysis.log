@@ -1,0 +1,43 @@
+======================================================================
+FAILURE ANALYSIS  (sigma=8.0, seeds=[0, 1, 2, 3, 4], alpha*=0.98)
+======================================================================
+seed 0: NAIVE flips =  27 / 360   BCWI flips =  16 / 360
+seed 1: NAIVE flips =  30 / 360   BCWI flips =  16 / 360
+seed 2: NAIVE flips =  36 / 360   BCWI flips =  16 / 360
+seed 3: NAIVE flips =  32 / 360   BCWI flips =  15 / 360
+seed 4: NAIVE flips =  28 / 360   BCWI flips =  19 / 360
+
+TOTAL across 5 seeds (out of 1800 test evaluations):
+  NAIVE negative flips: 153  (8.500% of all test evals)
+  BCWI  negative flips: 82  (4.556% of all test evals)
+  Relative reduction: +46.4%
+
+--- Negative flips by TRUE digit class (NAIVE) ---
+  digit 0:   2
+  digit 1:  21
+  digit 2:   5
+  digit 3:  15
+  digit 4:   6
+  digit 5:  19
+  digit 6:   0
+  digit 7:   0
+  digit 8:  56
+  digit 9:  29
+
+--- Negative flips by TRUE digit class (BCWI) ---
+  digit 0:   0
+  digit 1:  14
+  digit 2:   2
+  digit 3:   7
+  digit 4:   3
+  digit 5:  10
+  digit 6:   0
+  digit 7:   0
+  digit 8:  29
+  digit 9:  17
+
+Top-3 most-flipped true classes, NAIVE: [(8, 56), (9, 29), (1, 21)]
+Top-3 most-flipped true classes, BCWI : [(8, 29), (9, 17), (1, 14)]
+
+Saved 235 individual flip records to results/csv/failure_analysis_flips.csv
+Saved per-class summary to results/csv/failure_analysis_by_class.csv

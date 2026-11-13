@@ -1,0 +1,43 @@
+# Frozen experimental configuration (research_decisions.md, Sections 6-9).
+# Changing any value here after results/ has been populated invalidates the
+# "frozen protocol" claim in the paper — treat this file as read-only once
+# scripts/02 onward have been run.
+
+dataset:
+  name: sklearn.datasets.load_digits
+  n_samples: 1797
+  n_features: 64
+  n_classes: 10
+  test_fraction: 0.20          # fixed, stratified, seeded, never trained on
+  old_model_fraction: 0.25     # fraction of the train pool used for the OLD model
+
+model:
+  type: softmax_classifier (from-scratch NumPy, src/model.py)
+  learning_rate: 0.5
+  n_epochs: 300
+  batch_size: 64
+  l2_weight_decay: 1.0e-4
+  weight_init: N(0, 0.01), shared between OLD and every NEW-model variant per seed
+
+update_magnitude:
+  mechanism: additive Gaussian pixel noise injected into 100% of the new
+             model's training images (sklearn digits pixel range [0,16]);
+             test set is always clean/uncorrupted
+  sweep_values: [0.0, 2.0, 4.0, 6.0, 8.0, 10.0]
+
+ablation:
+  fixed_sigma_for_ablation: 8.0
+  pct_lambda_sweep: [0.0, 0.25, 0.5, 1.0, 2.0, 4.0]
+  bcwi_alpha_sweep: [0.0, 0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.85, 0.9, 0.92, 0.95, 0.98, 1.0]
+  selection_criterion: ">=20% mean NFR reduction vs. NAIVE AND <=2-point mean accuracy cost vs. NAIVE (mean over seeds); alpha=1.0 excluded as a structural identity (= OLD model, not an update)"
+  selected_bcwi_alpha: 0.98
+  selected_pct_lambda: null   # no lambda met the criterion (negative result, see paper Section 6)
+
+magnitude_sweep:
+  seeds: [0, 1, 2, 3, 4]
+  pct_lambda_carried: 0.25    # mildest tested setting, carried forward to check the negative result's robustness across magnitude
+  bcwi_alpha_carried: 0.98
+
+failure_analysis:
+  fixed_sigma: 8.0
+  seeds: [0, 1, 2, 3, 4]

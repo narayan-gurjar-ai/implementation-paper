@@ -1,0 +1,14 @@
+=== Pilot (a): vary OLD-model data fraction only (validation split, mean over seeds) ===
+old_frac=0.08  NAIVE val acc=0.9681  val NFR=0.0097
+old_frac=0.10  NAIVE val acc=0.9681  val NFR=0.0125
+old_frac=0.15  NAIVE val acc=0.9681  val NFR=0.0111
+old_frac=0.20  NAIVE val acc=0.9681  val NFR=0.0097
+old_frac=0.25  NAIVE val acc=0.9681  val NFR=0.0104
+
+=== Pilot (b): vary sigma (corruption of NEW training data), validation split, mean over seeds ===
+sigma= 0  NAIVE val acc=0.9681  val NFR=0.0104
+sigma= 2  NAIVE val acc=0.9465  val NFR=0.0222
+sigma= 4  NAIVE val acc=0.9285  val NFR=0.0333
+sigma= 6  NAIVE val acc=0.8993  val NFR=0.0583
+sigma= 8  NAIVE val acc=0.8743  val NFR=0.0819
+sigma=10  NAIVE val acc=0.8576  val NFR=0.0965
